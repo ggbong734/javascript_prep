@@ -1,20 +1,17 @@
 // use reduce on arrOfArrays
-// a is the first arr and b is the second arr. It returns a single arr: newArr.
-// start with accumulator a. Loop through array a, push each element into newArr.
-// Then loop through array b. If element is not in newArr, push into newArr.
+// a is the first arr and b is the second arr. It returns a single arr with each reduce run.
+// start with accumulator array a. We will use this as a starting point since there are no repeats in each array.
+// Then loop through array b. If element is not in a, push into a.
 
 function union (arrOfArrays) {
   return arrOfArrays.reduce( (a,b) => {
-    let newArr = [];
-    for(let i=0; i<a.length; i++) {
-      newArr.push(a[i]);
-    }
     for(let i=0; i<b.length;i++) {
-      	if(!newArr.includes(b[i]))  newArr.push(b[i]);
+      	if(!a.includes(b[i]))  a.push(b[i]);
     }
-    return newArr;
+    return a;
   });
 }
+
 
 // Uncomment these to check your work!
 const arr1 = [5, 10, 15];
