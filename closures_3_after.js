@@ -2,7 +2,7 @@
 // returns an anonymous function which can take any argument, so we pass in with rest parameter
 // declare a variable in the local execution context of the function, call it counter = 0
 // this helps us keep track of number of times we have run the function
-// in the inner function, we increment counter
+// in the inner function, we increment counte
 // then we run an if statement to check if the counter is more or equal to num, if so, we return the callback with the argument passed in
 
 
