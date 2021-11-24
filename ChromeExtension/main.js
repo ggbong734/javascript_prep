@@ -15,3 +15,15 @@ contentsParent.prepend('<img id="motivation" src="https://iamfearlesssoul.com/wp
 contentsParent.prepend("<span class='beautText'></b>Get back to building your dreams!<b></span>");
 
 message.addClass('beautText');
+
+setTimeout(function() { alert('I am delayed') }, 3000);
+
+$('.beauText').ready(function() {
+    $('.beauText').on('click', function() {
+        $('.beauText').fadeOut().delay(100).fadeIn();
+    });
+});
+
+$('#motivation').click(function() {
+    $('.#motivation').fadeOut().delay(100).fadeIn();
+})
