@@ -1,0 +1,44 @@
+.beautText {
+  color: green;
+  font-size: xx-large;
+  background-color: gainsboro;
+  animation-name: colorSwitch;
+  animation-duration: 2s;
+  animation-iteration-count: 3;
+}
+
+/* The animation code */
+@keyframes colorSwitch {
+  0% {
+    color: green;
+  }
+  50% {
+    color: orange;
+  }
+  100% {
+    color: red;
+  }
+}
+
+#motivation {
+  width: 750;
+  height: 500;
+  animation-name: cycleImage;
+  animation-duration: 9s;
+  animation-iteration-count: 3;
+}
+
+@keyframes cycleImage {
+  0% {
+    src: url("https://iamfearlesssoul.com/wp-content/uploads/2016/10/success-video-1-759x500.jpg");
+  }
+  30% {
+    src: url("https://www.brainyquote.com/photos_tr/en/b/bensweetland/122130/bensweetland1-2x.jpg");
+  }
+  70% {
+    src: url("https://i1.wp.com/www.quotespedia.org/ywhypsaw/2019/10/27102019009.jpg");
+  }
+  100% {
+    src: url("https://iamfearlesssoul.com/wp-content/uploads/2016/10/success-video-1-759x500.jpg");
+  }
+}
