@@ -1,11 +1,11 @@
 // initialize a new object
-// loop through each element in array
+// loop through each element in array.
 // create key with each element
 // set value as the output from callback function with element passed as argument
 
 function arrToObj(array, callback) {
   let obj = {};
-  for (let i=0; i<array.length; i++) {
+  for (let i = 0; i < array.length; i++) {
     obj[array[i]] = callback(array[i]);
   }
   return obj
