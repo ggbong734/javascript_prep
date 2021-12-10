@@ -1,5 +1,5 @@
 // initialize a new object
-// loop through each element in array..
+// loop through each element in array...
 // create key with each element
 // set value as the output from callback function with element passed as argument
 
