@@ -1,4 +1,4 @@
-// ADD CODE HERE..
+// ADD CODE HERE...
 
 function pluralize(arr) {
   let newArr = []
